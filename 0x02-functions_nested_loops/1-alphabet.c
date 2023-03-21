@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - function ptints alphabet
  *
  * Return: Always 0.
  */
