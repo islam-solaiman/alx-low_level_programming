@@ -11,6 +11,8 @@ void print_triangle(int size)
 	int raw;
 
 	raw = 1;
+	if (size <= 0)
+		printf("\n");
 	while (raw <= size)
 	{
 		int hash;
@@ -31,5 +33,4 @@ void print_triangle(int size)
 		raw++;
 		printf("\n");
 	}
-	/*printf("\n");*/
 }
