@@ -19,22 +19,16 @@ void print_diagonal(int n)
 		while (i <= n)
 		{
 			x = 1;
-			while (x <= i)
+			while (x <= n)
 			{
-				if (n == 1)
-				{
+				if (x == i)
 					_putchar('\\');
-					break;
-				}
-				else
-				{
+				else if (x < i)
 					_putchar(' ');
-					x++;
-				}
+				x++;
 
 			}
 			i++;
-			_putchar('\\');
 			_putchar('\n');
 		}
 	}
