@@ -12,7 +12,7 @@ void print_triangle(int size)
 
 	raw = 1;
 	if (size <= 0)
-		printf("\n");
+		_putchar('\n');
 	while (raw <= size)
 	{
 		int hash;
@@ -22,15 +22,15 @@ void print_triangle(int size)
 		space = size - raw;
 		while (space >= hash)
 		{
-			printf(" ");
+			_putchar(' ');
 			space--;
 		}
 		while (hash <= raw)
 		{
-			printf("#");
+			_putchar('#');
 			hash++;
 		}
 		raw++;
-		printf("\n");
+		_putchar('\n');
 	}
 }
