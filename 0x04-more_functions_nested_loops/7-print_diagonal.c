@@ -19,12 +19,6 @@ void print_diagonal(int n)
 		while (i <= n)
 		{
 			x = 1;
-			if (i == 1)
-			{
-				_putchar('\\');
-				_putchar('\n');
-				i++;
-			}
 			while (x <= i && n != 1)
 			{
 				_putchar(' ');
