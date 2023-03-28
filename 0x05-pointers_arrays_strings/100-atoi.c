@@ -8,10 +8,8 @@
 
 int _atoi(char *s)
 {
-	int i;
-	int d;
-	int x;
-	int temp;
+	int i, d, x;
+	unsigned int temp;
 
 	i = 0;
 	d = 1;
@@ -31,9 +29,6 @@ int _atoi(char *s)
 	while (!((s[i] >= '0' && s[i] <= '9')))
 		i++;
 	while (s[i] >= '0' && s[i] <= '9')
-	{
-		temp = (s[i] - '0') + (temp * 10);
-		i++;
-	}
+		temp = (s[i++] - '0') + (temp * 10);
 	return (temp * d);
 }
