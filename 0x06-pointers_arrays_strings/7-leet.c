@@ -9,20 +9,22 @@
 char *leet(char *s)
 {
 	int i;
+	int x;
+	char *str1;
+	char *str2;
 
+	str1 = "a,A,e,E,o,O,t,T,l,L";
+	str2 = "4,4,3,3,0,0,7,7,1,1";
 	i = 0;
+	x = 0;
 	while (s[i])
 	{
-		if (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		else if (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		else if (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		else if (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		else if (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+		while (str1[x])
+		{
+			if (s[i] == str1[x])
+				s[i] = str2[x];
+			x++;
+		}
 		i++;
 	}
 	return (s);
