@@ -16,9 +16,9 @@ char *leet(char *s)
 	str1 = "a,A,e,E,o,O,t,T,l,L";
 	str2 = "4,4,3,3,0,0,7,7,1,1";
 	i = 0;
-	x = 0;
 	while (s[i])
 	{
+		x = 0;
 		while (str1[x])
 		{
 			if (s[i] == str1[x])
