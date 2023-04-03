@@ -30,6 +30,8 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		i++;
 	}
+	if (s[j] && count == 0)
+		return (j);
 	if (count == 0)
 		return (0);
 	else
