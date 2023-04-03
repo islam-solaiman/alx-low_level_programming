@@ -31,7 +31,7 @@ unsigned int _strspn(char *s, char *accept)
 		i++;
 	}
 	if (count == j)
-		return (count);
+		return (count + 1);
 	else if (count == 0)
 		return (0);
 	else
