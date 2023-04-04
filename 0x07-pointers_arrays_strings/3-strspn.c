@@ -10,9 +10,9 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i;
-	unsigned int j;
-	unsigned int count;
+	int i;
+	int j;
+	int count;
 
 	j = 0;
 	count = 0;
@@ -29,13 +29,9 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			i++;
 		}
-		if (j == 0 && count == 0)
-			break;
 		j++;
 	}
-	if (count == j)
-		return (count);
-	else if (count == 0)
+	if (count == 0)
 		return (0);
 	else
 		return (count - 2);
