@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("%d\n", 0);
-		return ('0');
+		return (1);
 	}
 	else
 		while (argv[i])
@@ -49,7 +49,6 @@ int main(int argc, char *argv[])
 				count++;
 				printf("Error\n");
 				return (1);
-				break;
 			}
 			else
 				temp += _atoi(argv[i]);
