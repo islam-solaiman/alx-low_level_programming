@@ -31,30 +31,25 @@ int _atoi(char *s)
 
 int main(int argc, char *argv[])
 {
-	int i, temp, count;
+	int i, j, count;
 
 	i = 1;
-	temp = 0;
 	count = 0;
-	if (argc < 2)
+	while (i < argc)
 	{
-		printf("%d\n", 0);
-		return (1);
-	}
-	else
-		while (argv[i])
+		j = 0;
+		while (argv[i][j])
 		{
-			if (_atoi(argv[i]) == 0)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
-				count++;
 				printf("Error\n");
 				return (1);
 			}
-			else
-				temp += _atoi(argv[i]);
-			i++;
+			j++;
 		}
-	if (count == 0)
-		printf("%d\n", temp);
+		count += _atoi(argv[i]);
+		i++;
+	}
+	printf("%d\n", count);
 	return (0);
 }
