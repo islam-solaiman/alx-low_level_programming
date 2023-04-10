@@ -30,16 +30,24 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int change, quarter, ten, five, two, one;
+	int i, change, quarter, ten, five, two, one;
 
-	if (argc != 2 || ((*argv[1] > '9' || *argv[1] < '0') && _atoi(argv[1]) >= 0))
+	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
+	for (i = 0; argv[1][i] != '\0'; i++)
+	{
+		if ((argv[1][i] < '0' || argv[1][i] > '9') && argv[1][i] != '-')
+		{
+			printf("Error\n");
+			return (1);
+		}
+	}
 		change = _atoi(argv[1]);
-	if (change < 0)
+	if (change <= 0)
 	{
 		printf("0\n");
 		return (1);
