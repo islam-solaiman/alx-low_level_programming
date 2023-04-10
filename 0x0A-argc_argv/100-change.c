@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 {
 	int change, quarter, ten, five, two, one;
 
-	if (argc != 2)
+	if (argc != 2 || **argv > '9' || **argv < '0')
 	{
 		printf("Error\n");
 		return (1);
