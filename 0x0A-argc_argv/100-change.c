@@ -32,14 +32,18 @@ int main(int argc, char *argv[])
 {
 	int change, quarter, ten, five, two, one;
 
-	if (argc != 2 || *argv[1] > '9' || *argv[1] < '0')
+	if (argc != 2 || ((*argv[1] > '9' || *argv[1] < '0') && _atoi(argv[1]) >= 0))
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 		change = _atoi(argv[1]);
-
+	if (change < 0)
+	{
+		printf("0\n");
+		return (1);
+	}
 	while (change >= 1)
 	{
 		for (quarter = 0; change >= 25; quarter++)
