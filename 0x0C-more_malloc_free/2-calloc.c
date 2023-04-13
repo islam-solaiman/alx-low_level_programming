@@ -18,6 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	str = malloc(n_bytes);
 	if (str == NULL)
 		return (NULL);
+	n_bytes = n_bytes - 1;
 	while (n_bytes > 0)
 	{
 		str[n_bytes] = 0;
