@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		str[n_bytes] = 0;
 		n_bytes--;
 	}
-	n_bytes = 0;
+	str[n_bytes] = 0;
 	return ((void *)str);
 
 }
