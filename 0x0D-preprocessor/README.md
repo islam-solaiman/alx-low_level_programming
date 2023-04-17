@@ -38,3 +38,23 @@ You don’t have to push _putchar.c, we will use our file. If you do it won’t 
 In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples<br>
 Don’t forget to push your header file<br>
 All your header files should be include guarded
+
+### TASK 0
+
+Create a header file that defines a macro named SIZE as an abbreviation for the token 1024.
+
+### TASK 1
+
+Create a header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
+
+### TASK 2
+
+Write a program that prints the name of the file it was compiled from, followed by a new line.
+
+### TASK 3
+
+Write a function-like macro ABS(x) that computes the absolute value of a number x.
+
+### TASK 4
+
+Write a function-like macro SUM(x, y) that computes the sum of the numbers x and y.
