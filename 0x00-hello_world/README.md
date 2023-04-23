@@ -97,8 +97,13 @@ for argument in "$@" ; do
     ${BIN_PATH}/${BETTY_DOC} "$argument"
 done
 
+<<<<<<< HEAD
 	- Once saved, exit file and change permissions to apply to all users with chmod a+x betty
 	-  Move the betty file into /bin/ directory or somewhere else in your $PATH with sudo mv betty /bin/
+=======
+        - Once saved, exit file and change permissions to apply to all users with chmod a+x betty
+        -  Move the betty file into /bin/ directory or somewhere else in your $PATH with sudo mv betty /bin/
+>>>>>>> 17f22fff97afb08559354de61e1f0848e941ffa4
 You can now type betty <filename> to run the Betty linter!
 
 # TASK 0
@@ -114,7 +119,11 @@ Write a script that compiles a C file but does not link.
 
 - The C file name will be saved in the variable $CFILE
 - The output file should be named the same as the C file, but with the extension .o instead of .c.
+<<<<<<< HEAD
 	- Example: if the C file is main.c, the output file should be main.o
+=======
+        - Example: if the C file is main.c, the output file should be main.o
+>>>>>>> 17f22fff97afb08559354de61e1f0848e941ffa4
 
 # TASK 2
 
@@ -122,7 +131,11 @@ Write a script that generates the assembly code of a C code and save it in an ou
 
 - The C file name will be saved in the variable $CFILE
 - The output file should be named the same as the C file, but with the extension .s instead of .c.
+<<<<<<< HEAD
 	- Example: if the C file is main.c, the output file should be main.s
+=======
+        - Example: if the C file is main.c, the output file should be main.s
+>>>>>>> 17f22fff97afb08559354de61e1f0848e941ffa4
 
 # TASK 3
 
