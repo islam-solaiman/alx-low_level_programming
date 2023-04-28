@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void firs(void) __attribute__ ((constructor));
+void first(void) __attribute__ ((constructor));
 
 /**
  * first -  function that prints sintence before the main function is executed.
