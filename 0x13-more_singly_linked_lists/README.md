@@ -42,9 +42,9 @@ Please use this data structure for this project:
  *
  * Description: singly linked list node structure
  * 
- */
-typedef struct listint_s
-{
-    int n;
-    struct listint_s *next;
+
+typedef struct listint\_s<br>
+{<br>
+	int n;  
+	struct listint\_s *next;<br>
 } listint\_t;
