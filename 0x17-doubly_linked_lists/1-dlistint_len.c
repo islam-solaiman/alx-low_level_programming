@@ -2,7 +2,7 @@
 
 /**
  * dlistint_len - function returns number of elements in linked dlistint_t list
- * @h: pointer to linked list
+ * @h: pointer to linked list.
  * Return: number of element in lined list
  */
 
